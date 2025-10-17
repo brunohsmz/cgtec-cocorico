@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+* {
+  font-family: "montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ff8800;
+  overflow-x: hidden;
+}
+
+.container-config {
+    display: none;
+    background: #fff;
+    border-radius: 9px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.13);
+    width: 415px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-config .titulo-config {
+    font-size: 1.13rem;
+}
+
+.container-config .opcoes {
+    margin-top: 25px;
+}
+
+.opcoes .titulo-config {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.opcao-config .opcoes {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.opcoes button {
+    padding: 12px;
+    font-size: 0.938rem;
+    font-weight: 500;
+    background: #fff;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    transition: 0.3s ease;
+}
+
+.opcao-categoria.selecionado {
+    background: #ff8800;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.opcoes button:not(.selecionado):hover {
+    background: #d3d3d3;
+}
+
+.container-config .iniciar-quiz {
+    color: #fff;
+    margin-top: 30px;
+    border: none;
+    background: #f58300;
+    padding: 13px 25px;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.container-config .iniciar-quiz:hover {
+    background: #ff9900;
+    cursor: pointer;
+}
+
+.quiz-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.13);
+    width: 430px;
+    padding: 30px 25px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.quiz-container .pergunta {
+    font-size: 1.15rem;
+    margin-bottom: 22px;
+    color: #ff8800;
+    font-weight: 600;
+}
+
+.quiz-container .opcoes-quiz button {
+    margin: 10px 0;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    background: #f7f7f7;
+    transition: background 0.3s, color 0.3s;
+}
+
+.quiz-container .opcoes-quiz button:not(.selecionado):hover {
+    background: #c7c7c7;
+    color: #080808;
+    border: 1.5px solid #ccc;
+}
+
+.quiz-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #ff9900;
+}
+
+.quiz-container .timer, .quiz-container .duracao {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: #ff9900;
+    padding: 8px 18px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    display: inline-block;
+}

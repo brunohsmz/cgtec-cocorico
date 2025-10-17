@@ -1,0 +1,137 @@
+body {
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/cocorico.png");
+  background-size: cover;
+  overflow-x: hidden; /* Para evitar a barra de rolagem horizontal. */
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  h1 {
+    text-align: left;
+    padding-left: 20px;
+    font-family: "Story Script", cursive, sans-serif;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    text-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
+    margin: 0;
+  }
+  h2 {
+    text-align: right;
+    font-size: 40px;
+    margin: 0;
+    font-family: cursive, sans-serif;
+  }
+}
+
+.julio {
+  width: 277px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: julio-animation 1.5s linear; /* 2 - Aplica a animação. */
+  transform: scaleX(-1);
+}
+
+@keyframes julio-animation {
+  /* 1 - Keyframes é usado para definir uma animação. */
+  from {
+    left: -230px; /* Começa. */
+  }
+  to {
+    right: 100px; /* Termina. */
+  }
+}
+
+.cavalo {
+  width: 390px;
+  position: absolute;
+  bottom: 0;
+  animation: cavalo-animation 1.5s linear forwards;
+}
+
+@keyframes cavalo-animation {
+  from {
+    right: -250px;
+  }
+  to {
+    right: 2px;
+  }
+}
+
+.esquerda {
+  background-color: #589afc;
+  border-radius:20px;
+  margin-left: 10%;
+  margin-right: 10px;
+  padding: 30px;;
+  font-size: 23px;
+  position: absolute;
+  left: 0;
+  top: 150px;
+  width: 420px;
+}
+.direita {
+  padding: 30px;;
+  background-color: #589afc;
+  border-radius:20px;
+  margin-right: 10%;
+  font-size: 23px;
+  position: absolute;
+  right: 0;
+  top: 150px;
+  width: 420px;
+}
+
+#Jogar {
+  background-color: #389602;
+  font-size: 26px;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  padding: 10px 40px;
+  position: static; /* Mantem fixo no fim da tela */
+  margin-top: 30%;
+  margin-left: 50%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+  cursor: pointer;
+  box-shadow: #ffffffb0 0px 0px 8px;
+  a {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(255, 230, 0);
+  }
+}
+
+#Creditos {
+  position: fixed; /* Tira o fixed dos botões individuais */
+  width: 80px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  margin-top: 46%;
+  font-family: 'Comic Sans MS', sans-serif;
+  a {
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(255, 230, 0);
+  }
+}
+
+.julio, .cavalo {
+  max-width: 100vw;
+  
+}

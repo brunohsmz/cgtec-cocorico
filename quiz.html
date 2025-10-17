@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="cocorico.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/quiz.css" />
+  <title>Aprenda com o Júlio - Quiz</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <script defer src="js/quiz.js"></script>
+</head>
+
+<body>
+  <!-- Container para configurar o quiz-->
+  <div class="container-config">
+    <h1 class="titulo-config">Configuração do Quiz</h1>
+
+    <div class="opcao-config">
+      <h4 class="opcao-titulo">Selecione o Nível</h4>
+      <div class="opcoes">
+        <button class="opcao-categoria">Fácil</button>
+        <button class="opcao-categoria">Médio</button>
+        <button class="opcao-categoria">Difícil</button>
+        <button class="opcao-categoria">Jogo da Memória</button>
+      </div>
+
+      <button class="iniciar-quiz">Iniciar</button>
+    </div>
+  </div>
+  <!-- Container do Quiz-->
+  <div class="quiz-container">
+    <header class="quiz-header">
+      <h2 class="titulo-quiz">Boa sorte!</h2>
+      <div class="timer">
+        <span class="material-symbols-rounded">timer</span>
+        <p class="duracao">15s</p>
+      </div>
+    </header>
+
+    <div class="conteudo">
+      <h1 class="pergunta"></h1>
+    </div>
+  </div>
+</body>
+
+</html>

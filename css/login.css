@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    background-color: #ff8800;
+    font-family: "Girassol", serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+.topo {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 30px;
+
+    h3 {
+        margin-top: 20px;
+    }
+    p {
+        width: 80%;
+        display: inline-block;
+        margin-top: 35px;
+    }
+}
+
+.topo .logo {
+    max-width: 500px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    box-shadow: #000 0px 0px 10px; 
+}
+
+.start_buttom {
+    font-size: 26px;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    padding: 10px 40px;
+    position: fixed; /* Mantem fixo no fim da tela */
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    cursor: pointer;
+    box-shadow: #ffffffb0 0px 0px 8px;
+}
+.start_buttom:hover{
+    background-color: white;
+    color: #ff8800;
+    transition: 0.3s;
+}
+
